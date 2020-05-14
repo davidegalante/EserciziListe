@@ -27,7 +27,7 @@ public class Lista {
 	 * Inserisce un nuovo nodo in testa alla lista
 	 * @param info Informazione da inserire nel nodo
 	 */
-	public void inserisciTesta(String info){
+	public void inserisciTesta(int info){
 		Nodo nuovo = new Nodo(info,testa);
 		testa = nuovo;
 	} 
@@ -37,7 +37,7 @@ public class Lista {
 	 * @param info Informazione da inserire nel nodo
 	 */
 	@SuppressWarnings("unused")
-	public void inserisciCoda(String info){
+	public void inserisciCoda(int info){
 		if (vuota()) {
 			inserisciTesta(info);
 		}
@@ -62,7 +62,7 @@ public class Lista {
 		}
 		
 		if (testa.getSucc()==null) {
-			String elementoUltimo = testa.getInfo();
+			int elementoUltimo = testa.getInfo();
 			testa.setInfo(null);
 			return elementoUltimo;
 		}
@@ -78,13 +78,13 @@ public class Lista {
 	 * Elimina l'elemento in coda alla lista
 	 * @return Informazione dell'elemento eliminato (null se lista vuota)
 	 */	
-	public String eliminaInCoda() {
+	public int eliminaInCoda() {
 		if (vuota()) {
 			return null;
 		}
 		
 		if (testa.getSucc()==null) {
-			String elementoUltimo = testa.getInfo();
+			int elementoUltimo = testa.getInfo();
 			testa.setInfo(null);
 			return elementoUltimo;
 		}
@@ -106,7 +106,7 @@ public class Lista {
 	public void stampa(){
 		Nodo n = testa;
 		while(n!=null){
-			System.out.println(n.getInfo());
+			System.out.println(""+n.getInfo());
 			n = n.getSucc();
 		}
 	}
