@@ -14,7 +14,7 @@ public class Nodo {
 	 * Nodo vuoto
 	 */
 	public Nodo(){
-		info = 0;
+		info = null;
 		succ = null;
 	}
 	
