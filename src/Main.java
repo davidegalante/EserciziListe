@@ -5,7 +5,7 @@ public static void main(String[] args) {
 	l = new ListaDiInteri();
 	l.inserisciTesta(1);
 	l.inserisciTesta(2);
-	l.inserisciTesta(3);
+	l.inserisciTesta(0);
 	l.inserisciTesta(4);
 	l.stampa();
 	
