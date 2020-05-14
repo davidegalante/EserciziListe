@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	l.inserisciTesta("D");
 	l.stampa();
 	
-	String s = l.eliminaInTesta();
+	int s = l.eliminaInTesta();
 	System.out.println("ho eliminato: "+s); 	//D
 	l.stampa();									//C B A
 	s = l.eliminaInTesta();
