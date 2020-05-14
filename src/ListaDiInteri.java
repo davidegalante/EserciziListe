@@ -99,6 +99,35 @@ public class ListaDiInteri {
 		return u.getInfo();
 	}
 	
+	/**
+	 * Elimina tutti i nodi che contengono un numero dispari
+	 */
+	 public void eliminaDispari(){
+		Nodo n = testa;
+		while(n!=null){
+			if (n.getInfo()%2!=0){
+				eliminaInTesta();
+			}
+			n = n.getSucc();
+		}
+	 }
+	
+	
+	/**
+	 * Restituisce numero di nodi presenti
+	 */
+	 public int size(){
+		Nodo n = testa;
+		int tot = 0;
+		while(n!=null){
+			if (n.getInfo()==null){
+				return tot;
+			}
+			tot++;
+			n = n.getSucc();
+		}
+		return tot;
+	 }
 	
 	/**
 	 * Visualizzazione di tutti le informazioni
