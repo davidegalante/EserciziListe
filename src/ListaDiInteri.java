@@ -27,7 +27,7 @@ public class ListaDiInteri {
 	 * Inserisce un nuovo nodo in testa alla lista
 	 * @param info Informazione da inserire nel nodo
 	 */
-	public void inserisciTesta(int info){
+	public void inserisciTesta(Integer info){
 		Nodo nuovo = new Nodo(info,testa);
 		testa = nuovo;
 	} 
@@ -37,7 +37,7 @@ public class ListaDiInteri {
 	 * @param info Informazione da inserire nel nodo
 	 */
 	@SuppressWarnings("unused")
-	public void inserisciCoda(int info){
+	public void inserisciCoda(Integer info){
 		if (vuota()) {
 			inserisciTesta(info);
 		}
@@ -56,14 +56,14 @@ public class ListaDiInteri {
 	 * Elimina l'elemento in testa alla lista
 	 * @return Informazione dell'elemento eliminato (null se lista vuota)
 	 */
-	public int eliminaInTesta() {
+	public Integer eliminaInTesta() {
 		if (vuota()) {
-			return 0;
+			return null;
 		}
 		
 		if (testa.getSucc()==null) {
-			int elementoUltimo = testa.getInfo();
-			testa.setInfo(0);
+			Integer elementoUltimo = testa.getInfo();
+			testa.setInfo(null);
 			return elementoUltimo;
 		}
 		
@@ -78,14 +78,14 @@ public class ListaDiInteri {
 	 * Elimina l'elemento in coda alla lista
 	 * @return Informazione dell'elemento eliminato (null se lista vuota)
 	 */	
-	public int eliminaInCoda() {
+	public Integer eliminaInCoda() {
 		if (vuota()) {
-			return 0;
+			return null;
 		}
 		
 		if (testa.getSucc()==null) {
-			int elementoUltimo = testa.getInfo();
-			testa.setInfo(0);
+			Integer elementoUltimo = testa.getInfo();
+			testa.setInfo(null);
 			return elementoUltimo;
 		}
 		

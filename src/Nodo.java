@@ -6,7 +6,7 @@
 public class Nodo {
 	
 	/** informazione */
-	private int info;
+	private Integer info;
 	/** riferimento al nodo successivo */
 	private Nodo succ;
 	
@@ -22,7 +22,7 @@ public class Nodo {
 	 * Nodo senza riferimento al successivo
 	 * @param info Informazione da inserire nel nodo
 	 */
-	public Nodo(int info) {
+	public Nodo(Integer info) {
 		this.info = info;
 		this.succ = null;
 	}
@@ -32,16 +32,16 @@ public class Nodo {
 	 * @param info Informazione da inserire nel nodo
 	 * @param succ Riferimento al nodo successivo
 	 */
-	public Nodo(int info, Nodo succ) {
+	public Nodo(Integer info, Nodo succ) {
 		this.info = info;
 		this.succ = succ;
 	}
 
-	public int getInfo() {
+	public Integer getInfo() {
 		return info;
 	}
 
-	public void setInfo(int info) {
+	public void setInfo(Integer info) {
 		this.info = info;
 	}
 
