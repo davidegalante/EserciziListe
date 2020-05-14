@@ -1,6 +1,6 @@
 public class Main {
 
-
+// SCEMO CHI LEGGE
 //COMMENTO MIO 
 public static void main(String[] args) {
 	Lista l;
