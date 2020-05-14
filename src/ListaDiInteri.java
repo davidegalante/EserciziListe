@@ -100,7 +100,7 @@ public class ListaDiInteri {
 	}
 	
 	/**
-	 * Elimina tutti i nodi che contengono un numero dispari
+	 * Elimina tutti i nodi che contengono un numero dispari//
 	 */
 	 public void eliminaDispari(){
 		Nodo n = testa;
