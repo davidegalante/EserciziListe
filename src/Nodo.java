@@ -14,7 +14,7 @@ public class Nodo {
 	 * Nodo vuoto
 	 */
 	public Nodo(){
-		info = null;
+		info = 0;
 		succ = null;
 	}
 	
@@ -37,7 +37,7 @@ public class Nodo {
 		this.succ = succ;
 	}
 
-	public String getInfo() {
+	public int getInfo() {
 		return info;
 	}
 

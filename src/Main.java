@@ -1,14 +1,12 @@
 public class Main {
 
-// SCEMO CHI LEGGE
-//COMMENTO MIO 
 public static void main(String[] args) {
-	Lista l;
-	l = new Lista();
-	l.inserisciTesta("A");
-	l.inserisciTesta("B");
-	l.inserisciTesta("C");
-	l.inserisciTesta("D");
+	ListaDiInteri l;
+	l = new ListaDiInteri();
+	l.inserisciTesta(1);
+	l.inserisciTesta(2);
+	l.inserisciTesta(3);
+	l.inserisciTesta(4);
 	l.stampa();
 	
 	int s = l.eliminaInTesta();
